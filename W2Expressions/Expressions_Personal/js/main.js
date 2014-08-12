@@ -4,3 +4,4 @@
  * Personal Calculator
  */
 
+alert("Greets");
