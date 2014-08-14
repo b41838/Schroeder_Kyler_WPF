@@ -11,8 +11,17 @@ var knight;
 var archer;
 var ninja;
 
+var attributes[4];
+
 alert("Lets find out what kind of warrior you are!");
 
-var q1 = prompt("Do you prefer books, television, movies or ghost stories?")
+var attributes[0] = prompt("Do you prefer books, television, movies or ghost stories?")
 
-var q2 = prompt("")
+var attributes[1] = prompt("Would you rather go to the past, present or future?")
+
+var attributes[2] = prompt("Black, Blue, Brown or White?")
+
+var attributes[3] = prompt("What is your weapon of choice?  Sword, Gun or Trickery?")
+
+var attributes[4] = prompt("")
+
