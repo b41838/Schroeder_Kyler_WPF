@@ -20,4 +20,4 @@ console.log(totalOz);
 
 var cupsLeft = (ozInKeg - totalOz) / cupSize;
 
-console.log("If " + numPeople + " drink from a keg and each have " + beersPerPerson " there will be " + cupsLeft + "cups left over.");
+console.log("If " + numPeople + " people drink from a keg and each have " + beersPerPerson + " cups, there will be " + cupsLeft + " cups left over.");
