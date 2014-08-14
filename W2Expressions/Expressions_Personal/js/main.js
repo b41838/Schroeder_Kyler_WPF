@@ -4,7 +4,7 @@
  * Personal Calculator
  */
 
-alert("Greets");
+// alert("Greets");
 
 
 // find out how many cups are left over if a certain number of people drink a certain number of beverages of a certain size
