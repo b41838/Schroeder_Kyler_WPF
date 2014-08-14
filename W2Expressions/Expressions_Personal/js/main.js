@@ -7,7 +7,7 @@
 alert("Greets");
 
 
-// No one likes to waste money so this calculator will help me figure out how many kegs I need to buy
+// find out how many cups are left over if a certain number of people drink a certain number of beverages of a certain size
 
 var ozInKeg = 1984;
 var numPeople = prompt("How many people will be drinking from the keg?");
@@ -18,6 +18,6 @@ var totalOz = numPeople * beersPerPerson * cupSize;
 
 console.log(totalOz);
 
-var cupsLeft = totalOz - ozInKeg;
+var cupsLeft = (ozInKeg - totalOz) / cupSize;
 
-console.log(cupsLeft);
+console.log("If " + numPeople + " drink from a keg and each have " + beersPerPerson " there will be " + cupsLeft + "cups left over.");
