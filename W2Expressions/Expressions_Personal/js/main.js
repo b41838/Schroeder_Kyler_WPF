@@ -16,4 +16,8 @@ var beersPerPerson = prompt("How many beers does each person want to drink?");
 
 var totalOz = numPeople * beersPerPerson * cupSize;
 
-alert(totalOz);
+console.log(totalOz);
+
+var cupsLeft = totalOz / ozInKeg;
+
+console.log(cupsLeft);
