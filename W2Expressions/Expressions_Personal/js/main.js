@@ -18,6 +18,6 @@ var totalOz = numPeople * beersPerPerson * cupSize;
 
 console.log(totalOz);
 
-var cupsLeft = totalOz / ozInKeg;
+var cupsLeft = totalOz - ozInKeg;
 
 console.log(cupsLeft);
