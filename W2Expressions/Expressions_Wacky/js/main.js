@@ -4,29 +4,23 @@
  * Wacky Calculator
  */
 
-// this script will ask you three simple questions to find out what kind of warrior you are
+// this script will ask you four simple questions to find out what kind of warrior you are
 
-/* var mage;
-var knight;
-var archer;
-var ninja; */
+var attributes = ["mage", "knight", "archer", "ninja"]; // bank of warrior types
 
-var attributes = ["mage", "knight", "archer", "ninja"];
+alert("Lets find out what kind of warrior you are!"); // let the user know what's going on
 
-alert("Lets find out what kind of warrior you are!");
+var a = prompt("Do you prefer books, television, movies or ghost stories?"); // question 1
 
-var a = prompt("Do you prefer books, television, movies or ghost stories?");
+var b = prompt("Would you rather go to the past, present or future?"); // question 2
 
-var b = prompt("Would you rather go to the past, present or future?");
+var c = prompt("Black, Blue, Brown or White?"); // question 3
 
-var c = prompt("Black, Blue, Brown or White?");
+var d = prompt("What is your weapon of choice?  sword, gun or trickery?"); // question 4
 
-var d = prompt("What is your weapon of choice?  sword, gun or trickery?");
+var total = 0; // this will be the running total for the value of each answer
 
-var total = 0;
-// var attributes[4] = prompt("");
-
-if (a == "books") {
+if (a == "books") { // determin the value of the answer from question 1
 		total = total + 1;
 	} else if (a == "television") {
 		total = total + 2;
@@ -36,9 +30,9 @@ if (a == "books") {
 		total = total + 4;
 	}
 	
-	console.log(total);
+	// console.log(total);
 	
-if (b == "past") {
+if (b == "past") { // determin the value of the answer from question 2
 		total = total + 1;
 	} else if (b == "present") {
 		total = total + 2;
@@ -46,9 +40,9 @@ if (b == "past") {
 		total = total + 3;
 	}
 
-	console.log(total);
+	// console.log(total);
 	
-if (c == "blue") {
+if (c == "blue") { // determin the value of the answer from question 3
 		total = total + 1;
 	} else if (c == "white") {
 		total = total + 2;
@@ -58,9 +52,9 @@ if (c == "blue") {
 		total = total + 4;
 	}
 	
-	console.log(total);
+	// console.log(total);
 
-if (d == "trickery") {
+if (d == "trickery") {  // determin the value of the answer from question 4
 		total = total + 1;
 	} else if (d == "sword") {
 		total = total + 2;
@@ -68,16 +62,14 @@ if (d == "trickery") {
 		total = total + 3;;
 	}
 	
-	console.log(total);
+	// console.log(total);
 
-console.log (total);
-
-if (total <= 4) {
-	console.log("You are a " + attributes[0]) + "!";
-} else if (total > 4 && total < 9) {
-	console.log("You are a " + attributes[1]) + "!";
-} else if (total > 9 && total < 12) {
-	console.log("You are a " + attributes[2]) + "!";
-} else {
-	console.log("You are a " + attributes[3]) + "!";
-}
+if (total <= 4) { // add together the total value from all answers and assign the warrior type
+		console.log("You are a " + attributes[0]) + "!";
+	} else if (total > 4 && total < 9) {
+		console.log("You are a " + attributes[1]) + "!";
+	} else if (total > 9 && total < 12) {
+		console.log("You are a " + attributes[2]) + "!";
+	} else {
+		console.log("You are a " + attributes[3]) + "!";
+	}
