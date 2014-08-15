@@ -33,7 +33,7 @@ if (a == "books") {
 	} else if (a == "movies") {
 		total = total + 3;
 	} else {
-		total == total + 4;
+		total = total + 4;
 	}
 	
 	console.log(total);
@@ -55,7 +55,7 @@ if (c == "blue") {
 	} else if (c == "brown") {
 		total = total + 3;
 	} else {
-		total == total + 4;
+		total = total + 4;
 	}
 	
 	console.log(total);
