@@ -76,4 +76,8 @@ if (total <= 4) {
 	console.log("You are a " + attributes[0]) + "!";
 } else if (total > 4 && total < 9) {
 	console.log("You are a " + attributes[1]) + "!";
+} else if (total > 9 && total < 12) {
+	console.log("You are a " + attributes[2]) + "!";
+} else {
+	console.log("You are a " + attributes[3]) + "!";
 }
