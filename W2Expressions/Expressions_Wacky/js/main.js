@@ -21,30 +21,59 @@ var b = prompt("Would you rather go to the past, present or future?");
 
 var c = prompt("Black, Blue, Brown or White?");
 
-var d = prompt("What is your weapon of choice?  Sword, Gun or Trickery?");
+var d = prompt("What is your weapon of choice?  sword, gun or trickery?");
 
 var total = 0;
 // var attributes[4] = prompt("");
 
-/*if (a = "books") {
+if (a == "books") {
 		total = total + 1;
-	} else if (a = "television") {
+	} else if (a == "television") {
 		total = total + 2;
-	} else if (a = "movies") {
-		total = total + 3;
-	} else {
-		total = total + 4;
-	}*/
-	
-if (a == 1) {
-		total = total + 1;
-	} else if (a == 2) {
-		total = total + 2;
-	} else if (a == 3) {
+	} else if (a == "movies") {
 		total = total + 3;
 	} else {
 		total == total + 4;
 	}
+	
+	console.log(total);
+	
+if (b == "past") {
+		total = total + 1;
+	} else if (b == "present") {
+		total = total + 2;
+	} else {
+		total = total + 3;
+	}
 
+	console.log(total);
+	
+if (c == "blue") {
+		total = total + 1;
+	} else if (c == "white") {
+		total = total + 2;
+	} else if (c == "brown") {
+		total = total + 3;
+	} else {
+		total == total + 4;
+	}
+	
+	console.log(total);
+
+if (d == "trickery") {
+		total = total + 1;
+	} else if (d == "sword") {
+		total = total + 2;
+	} else {
+		total = total + 3;;
+	}
+	
+	console.log(total);
 
 console.log (total);
+
+if (total <= 4) {
+	console.log("You are a " + attributes[0]) + "!";
+} else if (total > 4 && total < 9) {
+	console.log("You are a " + attributes[1]) + "!";
+}
