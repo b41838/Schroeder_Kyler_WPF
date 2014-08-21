@@ -24,7 +24,7 @@ var sepRate = .07;
 var octRate = .05;
 var novRate = .03;
 var decRate = .03;
-var month = propmt("What month were the earnings lost for?");
+var month = prompt("What month were the earnings lost for?");
 var daysOutstanding = prompt("How many days in " + month + " were missed?");
 var totalPrincipal = prompt("What was the total lost principal?");
 
