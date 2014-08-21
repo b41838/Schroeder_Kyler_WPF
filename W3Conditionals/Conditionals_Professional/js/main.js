@@ -30,10 +30,20 @@ var daysOutstanding = prompt("How many days in " + month + " were missed?"); // 
 var totalPrinciple = prompt("What was the total lost principal?"); // asks user for the total amount of principle that should have been invested
 var totalLostEarnings = 0; // total decided by formula below
 
+var regex = /^\d+$/;
+
 alert("Let/'s calculate some lost earnings!");
 
+if (month == "" ) {
+	month = prompt("Please enter a valid montht that the earnings were lost for."); // asks user AGAIN for the month lost earninsg occurred
+};
+
+/*if (totalPrinciple != /^\d+$/ ) {
+	totalPrinciple = prompt("Please enter a valid principle amount that the earnings were lost for."); // asks user AGAIN for the amount lost earninsg occurred
+};*/
+
 if (month == "january") { // code block decides which rate to use
-	rate = janRate
+	rate = janRate;
 } else if (month == "february") {
 	rate = febRate
 } else if (month == "march") {
