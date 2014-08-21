@@ -36,6 +36,30 @@ console.log(totalPrincipal);
 
 // alert("Let/'s calculate some lost earnings!");
 
-if(month == january) {
+if (month == "january") {
 	rate = janRate
+} else if (month == "february") {
+	rate = febRate
+} else if (month == "march") {
+	rate = marRate
+} else if (month == "april") {
+	rate = aprRate
+} else if (month == "may") {
+	rate = mayRate
+} else if (month == "june") {
+	rate = junRate
+} else if (month == "july") {
+	rate = julRate
+} else if (month == "august") {
+	rate = augRate
+} else if (month == "september") {
+	rate = sepRate
+} else if (month == "october") {
+	rate = octRate
+} else if (month == "november") {
+	rate = novRate
+} else {
+	rate = decRate
 };
+
+console.log(rate);
