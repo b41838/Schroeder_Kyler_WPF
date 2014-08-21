@@ -9,35 +9,30 @@
 // file, employees funds are not invested and lose out on the gains in the market.  Now you need to calculate lost earnings, not fun... here's how.
 // DISCLAIMER: This calculation is not real, we use a calculator provided by the Department of Labor.
 
-alert("Greets");
+// alert("Greets");
 
 
-var janRate = .03;
-var febRate = .06;
-var marRate = .05;
-var aprRate = .03;
-var mayRate = .02;
-var junRate = .04;
-var julRate = .03;
-var augRate = .07;
-var sepRate = .07;
-var octRate = .05;
-var novRate = .03;
-var decRate = .03;
-var month = prompt("What month were the earnings lost for?");
-var rate = 0;
-var daysOutstanding = prompt("How many days in " + month + " were missed?");
-var totalPrinciple = prompt("What was the total lost principal?");
-var totalLostEarnings = 0;
+var janRate = .03; // defines rate for month of January
+var febRate = .06; // defines rate for month of February
+var marRate = .05; // defines rate for month of March
+var aprRate = .03; // defines rate for month of April
+var mayRate = .02; // defines rate for month of May
+var junRate = .04; // defines rate for month of June
+var julRate = .03; // defines rate for month of July
+var augRate = .07; // defines rate for month of August
+var sepRate = .07; // defines rate for month of September
+var octRate = .05; // defines rate for month of October
+var novRate = .03; // defines rate for month of November
+var decRate = .03; // defines rate for month of December
+var month = prompt("What month were the earnings lost for?"); // asks user for the month lost earninsg occurred
+var rate = 0; // place holder for rate decided by if statement
+var daysOutstanding = prompt("How many days in " + month + " were missed?"); // asks user for the days without being invested
+var totalPrinciple = prompt("What was the total lost principal?"); // asks user for the total amount of principle that should have been invested
+var totalLostEarnings = 0; // total decided by formula below
 
+alert("Let/'s calculate some lost earnings!");
 
-console.log(month);
-console.log(daysOutstanding);
-console.log(totalPrinciple);
-
-// alert("Let/'s calculate some lost earnings!");
-
-if (month == "january") {
+if (month == "january") { // code block decides which rate to use
 	rate = janRate
 } else if (month == "february") {
 	rate = febRate
@@ -63,8 +58,6 @@ if (month == "january") {
 	rate = decRate
 };
 
-console.log(rate);
+totalLostEarnings = daysOutstanding * totalPrinciple * rate; // calculates the total lost earnings that needs to be refunded
 
-totalLostEarnings = daysOutstanding * totalPrinciple * rate;
-
-console.log("Your total lost earnings come out to $" + totalLostEarnings + ".");
+console.log("Your total lost earnings come out to $" + totalLostEarnings + "."); // displays final calculation
