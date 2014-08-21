@@ -25,8 +25,10 @@ var octRate = .05;
 var novRate = .03;
 var decRate = .03;
 var month = prompt("What month were the earnings lost for?");
+var rate = 0;
 var daysOutstanding = prompt("How many days in " + month + " were missed?");
 var totalPrincipal = prompt("What was the total lost principal?");
+
 
 console.log(month);
 console.log(daysOutstanding);
@@ -34,3 +36,6 @@ console.log(totalPrincipal);
 
 // alert("Let/'s calculate some lost earnings!");
 
+if(month == january) {
+	rate = janRate
+};
