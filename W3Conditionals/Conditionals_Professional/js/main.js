@@ -30,7 +30,7 @@ var daysOutstanding = prompt("How many days in " + month + " were missed?"); // 
 var totalPrinciple = prompt("What was the total lost principal?"); // asks user for the total amount of principle that should have been invested
 var totalLostEarnings = 0; // total decided by formula below
 
-var regex = /^\d+$/;
+
 
 alert("Let/'s calculate some lost earnings!");
 
@@ -38,9 +38,13 @@ if (month == "" ) {
 	month = prompt("Please enter a valid montht that the earnings were lost for."); // asks user AGAIN for the month lost earninsg occurred
 };
 
-/*if (totalPrinciple != /^\d+$/ ) {
-	totalPrinciple = prompt("Please enter a valid principle amount that the earnings were lost for."); // asks user AGAIN for the amount lost earninsg occurred
-};*/
+// code block makes sure input is an integer
+if (daysOutstanding != parseInt(daysOutstanding)) // runs javascript function to figure if input is an integer
+            daysOutstanding = prompt("how many days in " + month + " were missed?"); // if not, asks user again
+
+// code block makes sure input is an integer
+if (totalPrinciple != parseInt(totalPrinciple)) // runs javascript function to figure if input is an integer
+            totalPrinciple = prompt("What was the total lost principal?"); // if not, asks user again
 
 if (month == "january") { // code block decides which rate to use
 	rate = janRate;
