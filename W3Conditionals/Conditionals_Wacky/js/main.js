@@ -11,6 +11,10 @@ alert("Greets");
 
 var age = prompt("How many months old is your Pitbull?");
 var active = prompt("How would you rate your dogs energy level: active, berzerk or insane?");
+	if (active == "") {
+		active = prompt("Please enter how would you rate your dogs energy level: active, berzerk or insane?");
+	}
+
 var foodAmount = ["One cup per day", "One and a half cups per day", "Two cups per day", "Two and a half cups per day"];
 
 console.log(age);
