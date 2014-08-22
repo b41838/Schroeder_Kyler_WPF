@@ -11,7 +11,7 @@
 
 var age = prompt("How many months old is your Pitbull?"); // asks user to enter their dogs age in months
 
-/ code block makes sure input is an integer
+// code block makes sure input is an integer
 if (age != parseInt(age)) // runs javascript function to figure if input is an integer
             age = prompt("How many months old is your Pitbull?"); // if not, asks user again
             
