@@ -19,8 +19,8 @@ var active = prompt("How would you rate your dogs energy level: active, berzerk 
 
 var foodAmount = ["Your dog can have two cups per day.", "Your dog can have three cups per day.", "Your dog can have four cups per day.", "Your dog can have five cups per day."]; // array holds answers to the formula
 
-// runs calculation to see how much food your Pitt should eat
-if (age <= 12 && active == "active") {  // if your Pitt is under 12 months and active
+// runs calculation to see how much food your Pit should eat
+if (age <= 12 && active == "active") {  // if your Pit is under 12 months and active
 		console.log(foodAmount[0]); // he gets two cups of food
 	} else if (age <= 12 && active == "berzerk" || active == "insane") {  // if dog is under 12 months and berzerk or insane
 		console.log(foodAmount[1]); // he gets three cups per day
