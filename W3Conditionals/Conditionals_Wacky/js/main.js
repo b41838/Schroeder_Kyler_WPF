@@ -7,29 +7,29 @@
 
 // I have a 1~ year old pitbull and he eats.. A LOT.  This calculator will figure how much food to give your dog so it's satisfied and doesn't become a fatty.
 
-alert("Greets");
+// alert("Greets");
 
-var age = prompt("How many months old is your Pitbull?");
-var active = prompt("How would you rate your dogs energy level: active, berzerk or insane?");
-	if (active == "") {
-		active = prompt("Please enter how would you rate your dogs energy level: active, berzerk or insane?");
+var age = prompt("How many months old is your Pitbull?"); // asks user to enter their dogs age in months
+var active = prompt("How would you rate your dogs energy level: active, berzerk or insane?"); // asks user to rate their dogs energy level
+
+	// code block makes sure user has entered a string
+	if (active == "") { // if string is empty
+		active = prompt("Please enter how would you rate your dogs energy level: active, berzerk or insane?"); // prompts user and assigns answer to active variable
 	}
 
-var foodAmount = ["One cup per day", "One and a half cups per day", "Two cups per day", "Two and a half cups per day"];
+var foodAmount = ["Two cups per day", "Three cups per day", "Four cups per day", "Five cups per day"]; // array holds answers to the formula
 
-console.log(age);
-console.log(active);
-
-if (age <= 12 && active == "active") {
-		console.log(foodAmount[0]);
-	} else if (age <= 12 && active == "berzerk" || active == "insane") {
-		console.log(foodAmount[1]);
-	} else if (age > 12 && age <= 48 && active == "active" || active == "berzerk") {
-		console.log(foodAmount[2]);
-	} else if (age > 12 && age <= 48 && active == "insane") {
-		console.log(foodAmount[3]);
-	} else if (age > 48 && active == "active" || active == "berzerk") {
-		console.log(foodAmount[1]);
-	} else {
-		console.log(foodAmount[2]);
+// runs calculation to see how much food your Pitt should eat
+if (age <= 12 && active == "active") {  // if your Pitt is under 12 months and active
+		console.log(foodAmount[0]); // he gets two cups of food
+	} else if (age <= 12 && active == "berzerk" || active == "insane") {  // if dog is under 12 months and berzerk or insane
+		console.log(foodAmount[1]); // he gets three cups per day
+	} else if (age > 12 && age <= 48 && active == "active" || active == "berzerk") { // if he's over 12 months and less than 48 months and either active or berzerk
+		console.log(foodAmount[2]); // he gets four cups per day
+	} else if (age > 12 && age <= 48 && active == "insane") { // if he's older than 12 months and under 48 and insane
+		console.log(foodAmount[3]); // he gets five cups
+	} else if (age > 48 && active == "active" || active == "berzerk") { // if he's older than 48 months and active
+		console.log(foodAmount[1]); // he gets three cups per day
+	} else { // if he's older than 48 and insane
+		console.log(foodAmount[2]); // he gets four cups per day
 	};
