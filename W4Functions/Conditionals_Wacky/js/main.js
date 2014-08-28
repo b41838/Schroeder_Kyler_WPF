@@ -12,3 +12,5 @@ alert("Greets");
 var wall = Math.floor(Math.random() * (25 - 1 + 1)) + 1;
 
 console.log(wall);
+
+alert("Whoa!  That wall looks like it needs to be destroyed!  It has " + wall + " hit points, time to get wrecking!");
