@@ -9,7 +9,11 @@
 
 // alert("Greets");
 
-var wall = Math.floor(Math.random() * (25 - 1 + 1)) + 1;
+var random = Math.floor(Math.random() * (25 - 1 + 1)) + 1;
+var wall = 0 + random;
+
+console.log(wall);
+
 var blue = 3;
 var red = 5;
 var black = 10;
@@ -26,5 +30,42 @@ function wreck() {
 	return round1;
 };
 
+if(ball1 == "blue") {
+	ball1 = blue;
+} else if( ball1 == "red") {
+	ball1 = red;
+} else {
+	ball1 = black;
+}
 
-console.log(ball1);
+wall = wall - ball1;
+console.log(wall);
+
+console.log("The wall now has " + wall + " hit points.");
+/*var again = prompt("Do you want to smash it agan?");
+
+if(again == "yes") {
+	wreck();
+} else {
+	alert("Thanks for playing.");
+}
+
+if(ball1 == "blue") {
+	ball1 = blue;
+} else if( ball1 == "red") {
+	ball1 = red;
+} else {
+	ball1 = black;
+}
+
+wall = wall - ball1;
+console.log(wall);
+
+alert("The wall now has " + wall + " hit points.");
+var again = prompt("Do you want to smash it agan?");
+
+if(again == "yes") {
+	wreck();
+} else {
+	alert("Thanks for playing.");
+}*/
