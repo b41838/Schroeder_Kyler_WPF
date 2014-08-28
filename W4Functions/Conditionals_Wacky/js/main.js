@@ -42,10 +42,10 @@ wall = wall - ball1;
 console.log(wall);
 
 console.log("The wall now has " + wall + " hit points.");
-/*var again = prompt("Do you want to smash it agan?");
+var again = prompt("Do you want to smash it agan?");
 
 if(again == "yes") {
-	wreck();
+	var ball2 = wreck();
 } else {
 	alert("Thanks for playing.");
 }
@@ -68,4 +68,4 @@ if(again == "yes") {
 	wreck();
 } else {
 	alert("Thanks for playing.");
-}*/
+}
