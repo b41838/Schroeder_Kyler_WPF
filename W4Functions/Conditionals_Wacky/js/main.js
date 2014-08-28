@@ -9,6 +9,6 @@
 
 alert("Greets");
 
-var wall = Math.Random(0,25);
+var wall = Math.floor(Math.random() * (25 - 1 + 1)) + 1;
 
 console.log(wall);
