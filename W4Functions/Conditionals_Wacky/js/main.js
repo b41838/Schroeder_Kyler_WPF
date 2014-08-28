@@ -41,6 +41,10 @@ if(ball1 == "blue") {
 wall = wall - ball1;
 console.log(wall);
 
+if(wall < 0) {
+	alert("Boom goes the dynamite!  Thanks for playing!");
+}
+
 console.log("The wall now has " + wall + " hit points.");
 var again = prompt("Do you want to smash it agan?");
 
@@ -50,22 +54,15 @@ if(again == "yes") {
 	alert("Thanks for playing.");
 }
 
-if(ball1 == "blue") {
-	ball1 = blue;
+if(ball2 == "blue") {
+	ball2 = blue;
 } else if( ball1 == "red") {
-	ball1 = red;
+	ball2 = red;
 } else {
-	ball1 = black;
+	ball2 = black;
 }
 
-wall = wall - ball1;
+wall = wall - ball2;
 console.log(wall);
 
-alert("The wall now has " + wall + " hit points.");
-var again = prompt("Do you want to smash it agan?");
-
-if(again == "yes") {
-	wreck();
-} else {
-	alert("Thanks for playing.");
-}
+console.log("The wall now has " + wall + " hit points.");
