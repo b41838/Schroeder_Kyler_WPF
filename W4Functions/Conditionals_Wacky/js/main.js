@@ -19,6 +19,7 @@ var black = 10;
 alert("Whoa!  That wall looks like it needs to be destroyed!  It has " + wall + " hit points, time to get wrecking!");
 alert("You have three wepons, the blue wrecking ball does " + blue + " damage, the red ball does " + red + " damage and the black ball does " + black + " damage.");
 
+var ball1 = wreck();
 
 function wreck() {
 	var round1 = prompt("Would you like to use the blue, red or black ball first?");
@@ -26,4 +27,4 @@ function wreck() {
 };
 
 
-console.log(round1);
+console.log(ball1);
