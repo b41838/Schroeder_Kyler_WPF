@@ -13,8 +13,17 @@ alert("Let's figure out how much money you will have in your retirement over tim
 
 var pretax = prompt("how much money per pay period will you withold for 401k?");
 var posttax = prompt("How much money per pay period will you contribute for your Roth?");
-var match = prompt("What percent does your employer match?");
+var matchPercent = prompt("What percent does your employer match?");
+var match = matchPercent * 0.01 * pretax;
 
 console.log(pretax);
 console.log(posttax);
+console.log(matchPercent);
 console.log(match);
+
+function calc1(term) {
+	var total = (parseInt(pretax) + parseInt(posttax) + parseFloat(match)) * term;
+	console.log("total retirement funds are.. " + total + " dollars!");
+};
+
+calc1(2);
