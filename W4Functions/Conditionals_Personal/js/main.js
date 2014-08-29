@@ -5,5 +5,5 @@
  * Personal Calculator
  */
 
-alert("Greets");
+// alert("Greets");
 

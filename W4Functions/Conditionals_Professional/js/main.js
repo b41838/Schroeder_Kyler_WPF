@@ -5,7 +5,7 @@
  * Professional Calculator
  */
 
-// I work for a Payroll Software company and deal with the data contained in copanies 401k files. This will show how much you accrue over time.
+// I work for a Payroll Software company and deal with the data contained in copanies 401k files. This will show how much you accrue over time.  I just handle the transmission, not the calculations!
 
 // alert("Greets");
 
@@ -21,9 +21,24 @@ console.log(posttax);
 console.log(matchPercent);
 console.log(match);
 
-function calc1(term) {
+function year(term) {
 	var total = (parseInt(pretax) + parseInt(posttax) + parseFloat(match)) * term;
-	console.log("total retirement funds are.. " + total + " dollars!");
+	
+	console.log("Your total retirement funds are.. " + total + " dollars over 1 year!");
 };
 
-calc1(2);
+function fiveYears(term) {
+	var total = (parseInt(pretax) + parseInt(posttax) + parseFloat(match)) * term;
+	
+	console.log("Your total retirement funds are.. " + total + " dollars over five years!");
+};
+
+function twentyYears(term) {
+	var total = (parseInt(pretax) + parseInt(posttax) + parseFloat(match)) * term;
+	
+	console.log("Your total retirement funds are.. " + total + " dollars over 20 years!");
+};
+
+year(12);
+fiveYears(60);
+twentyYears(240);
